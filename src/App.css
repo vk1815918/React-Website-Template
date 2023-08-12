@@ -1,0 +1,145 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+/* Set the color scheme */
+:root {
+  --primary-color: #970db6;
+  --secondary-color: #a218ec;
+  --tertiary-color: #000000;
+  --quaternary-color: #090404;
+  --quinary-color: #000000;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Set the body properties */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Set the App properties */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: var(--bg-color); */
+  /* color: var(--text-color); */
+}
+
+/* Set the header properties */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+}
+
+/* Set the header h1 properties */
+.header h1 {
+  margin-left: 20px;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Set the nav-list properties */
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+/* Set the nav-item properties */
+.nav-item {
+  margin-right: 20px;
+}
+
+/* Set the nav-item a properties */
+.nav-item a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+}
+
+/* Set the nav-item hover effect */
+.nav-item:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Set the main properties */
+.main {
+  flex-grow: 1;
+}
+
+/* Set the hero properties */
+.hero {
+    display: flex; /* This makes the hero element a flex container */
+    flex-direction: column; /* This makes the flex items stack vertically */
+    align-items: center; /* This makes the flex items align horizontally in the center */
+    justify-content: space-evenly; /* This makes the flex items distribute evenly along the vertical axis */
+    height: 80vh;
+    background-image: url('https://images.unsplash.com/photo-1508615070457-7baeba4003e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+/* Set the hero h2 properties */
+.hero h2 {
+  color: var(--quaternary-color);
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Set the hero p properties */
+.hero p {
+  color: var(--quaternary-color);
+}
+
+/* Set the hero button properties */
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+}
+
+/* Set the hero button hover effect */
+.hero button:hover {
+  transform: scale(1.1);
+}
+
+/* Set the features properties */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+
+/* Set the feature properties */
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Set the feature icon properties */
+.feature svg {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+/* Set the feature h3 properties */
+.feature h3 {
+  margin-top: 10px;
+}
+
+/* Set the feature p properties */
+.feature p {
+  text-align: center;
+}
+
+/* Set the footer properties */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--quaternary-color);
+  text-align: center;
+}
